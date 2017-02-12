@@ -6,8 +6,8 @@ export default ({ text, subText, paddingTop = '200px', imageClass }) => (
         <h1>{text}</h1>
         <h5>{subText}</h5>
         <div className="download">
-          <img src="/static/ios.png" alt="LENKILA on Apple Store" width="180" />
-          <img src="/static/android.png" alt="LENKILA on Google Play" width="180" />
+          <img src="/static/ios.png" alt="LENKILA on Apple Store" width="190" />
+          <img src="/static/android.png" alt="LENKILA on Google Play" width="190" />
         </div>
       </div>
       <div className="six columns" style={{ position: 'relative' }}>
