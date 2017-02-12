@@ -1,3 +1,5 @@
+import Layout from '../components/Layout';
+
 export default () => (
-  <div>Lenkila yo</div>
+  <Layout><div>yo</div></Layout>
 );
