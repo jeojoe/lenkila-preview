@@ -29,7 +29,6 @@ export default class Banner extends Component {
         </div>
         <style jsx>{`
           .banner {
-            background-image: url('/static/bg-1.jpg');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -45,7 +44,7 @@ export default class Banner extends Component {
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
             animation-duration: 10s;
-            // animation-direction: alternate;
+            animation-direction: alternate;
           }
           .banner h1 {
             font-size: 56px;
@@ -58,16 +57,16 @@ export default class Banner extends Component {
           }
           @keyframes cf3FadeInOut {
             0% {
-              background-image: url('/static/bg-1.jpg');
+              background-image: url('/static/bg-2.jpg');
             }
             45% {
-              background-image: url('/static/bg-2.jpg');
+              background-image: url('/static/bg-1.jpg');
             }
             55% {
-              background-image: url('/static/bg-2.jpg');
+              background-image: url('/static/bg-1.jpg');
             }
             100% {
-              background-image: url('/static/bg-1.jpg');
+              background-image: url('/static/bg-2.jpg');
             }
           }
         `}</style>

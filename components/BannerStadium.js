@@ -32,7 +32,6 @@ export default class BannerStadium extends Component {
         <style jsx>{`
           .banner {
             text-align: center;
-            background-image: url('/static/bg-1.jpg');
             background-size: cover;
             background-position: center;
             position: relative;
