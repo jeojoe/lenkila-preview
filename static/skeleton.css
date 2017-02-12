@@ -6,12 +6,18 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
 */
-.banner {
+.banner-gradient {
+  opacity: 0.9;
+  z-index: 0;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(271deg, #ff8900, #ffcd00);
   background-size: 400% 400%;
-  animation: AnimationName 11s ease infinite;
-  -webkit-animation: AnimationName 11s ease infinite;
-  -moz-animation: AnimationName 11s ease infinite;
+  animation: AnimationName 10s ease infinite;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
 }
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
