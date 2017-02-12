@@ -4,9 +4,11 @@ import c from 'classnames';
 export default ({ url: { pathname } }) => (
   <div className="navbar">
     <div className="wrapper">
-      <div className="left"><h4>LENKILA</h4></div>
+      <div className="left">
+        <Link href="/"><h4>LENKILA</h4></Link>
+      </div>
       <div className="right">
-        คุณคือ :
+        <span className="no-mobile">คุณคือ :</span>
         <Link href="/">
           <a className={c('nav-item', { active: pathname === '/' })}>
             ผู้เล่น</a>
@@ -25,6 +27,7 @@ export default ({ url: { pathname } }) => (
         color: #fff;
         // text-shadow: 0px 2px 4px rgba(0,0,0,0.3);
         letter-spacing: 0.1rem;
+        cursor: pointer;
       }
       .navbar {
         position: absolute;
@@ -57,13 +60,34 @@ export default ({ url: { pathname } }) => (
         margin-left: 20px;
       }
       .nav-item.active {
-        text-decoration: underline;
+        color: #ff9300;
+        background-color: #fff;
+        padding: 6px 12px 8px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+        text-shadow: none;
       }
       .nav-item:hover {
         text-decoration: underline;
       }
+      .nav-item.active:hover {
+        text-decoration: none;
+      }
       .nav-item.no-hover:hover {
         text-decoration: none;
+      }
+      @media (max-width: 550px) {
+        .left, .right {
+          display: block;
+          text-align: center;
+        }
+        .right {
+          float: none;
+          margin: 0 auto;
+        }
+        .nav-item.no-hover {
+          display: none;
+        }
       }
     `}</style>
   </div>
