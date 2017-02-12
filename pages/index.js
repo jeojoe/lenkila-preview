@@ -5,7 +5,7 @@ export default ({ url }) => (
   <Layout url={url}>
     <Banner
       text="THAI COMMUNITY FOR SPORT LOVER"
-      subText="หาเพื่อนเล่น จองสนาม จบในที่เดียว"
+      subText="หาเพื่อนเล่นกีฬา จองสนาม จบในที่เดียว"
       imageClass="iphone"
     />
   </Layout>

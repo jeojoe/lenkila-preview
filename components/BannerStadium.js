@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Banner extends Component {
+export default class BannerStadium extends Component {
   componentDidMount() {
     window.sr = ScrollReveal();
     sr.reveal('.text-reveal');
@@ -8,32 +8,30 @@ export default class Banner extends Component {
     sr.reveal('.browser', { delay: 500 });
   }
   render() {
-    const { text, subText, paddingTop = '200px', imageClass } = this.props;
+    const { text, subText, paddingTop = '140px', imageClass } = this.props;
     return (
       <div className="banner" style={{ paddingTop }}>
         <div className="banner-gradient" />
         <div className="container">
-          <div className="six columns">
+          <div className="row">
             <div className="text-reveal">
               <h1>{text}</h1>
               <h5>{subText}</h5>
-              <div className="download">
-                <img src="/static/ios.png" alt="LENKILA on Apple Store" width="190" />
-                <img src="/static/android.png" alt="LENKILA on Google Play" width="190" />
-              </div>
+              <button className="button-primary">ลงทะเบียนใช้งาน</button>
             </div>
           </div>
-          <div className="six columns" style={{ position: 'relative' }}>
-            <div className={imageClass} />
+          <div className="row" style={{ paddingTop: '50px' }}>
+            <img src="/static/browser.png" alt="Stadium UI Preview" className="browser" />
           </div>
         </div>
         <style jsx>{`
           .banner {
+            text-align: center;
             background-image: url('/static/bg-1.jpg');
             background-size: cover;
             background-position: center;
             position: relative;
-            height: 670px;
+            height: 930px;
             width: 100%;
             color: #fff;
             text-shadow: 0px 2px 4px rgba(0,0,0,0.3);
@@ -53,7 +51,7 @@ export default class Banner extends Component {
           .banner h5 {
             letter-spacing: 0.1rem;
           }
-          .download img {
+          .banner .button {
             margin: 20px 15px 0 0;
           }
           @keyframes cf3FadeInOut {
@@ -72,27 +70,8 @@ export default class Banner extends Component {
           }
         `}</style>
         <style jsx global>{`
-          .iphone {
-            position: absolute;
-            top: -80px;
-            left: 70px;
-            width: 340px;
-            height: 685px;
-            // background-color: red;
-            background-image: url('/static/iphone-black.png');
-            background-size: cover;
-            background-position: center;
-          }
           .browser {
-            position: absolute;
-            top: -50px;
-            left: 40px;
-            width: 860px;
-            height: 520px;
-            // background-color: red;
-            background-image: url('/static/browser.png');
-            background-size: cover;
-            background-position: center;
+            width: 100%;
           }
         `}</style>
       </div>
