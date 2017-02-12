@@ -8,9 +8,9 @@ export default class Banner extends Component {
     sr.reveal('.browser', { delay: 500 });
   }
   render() {
-    const { text, subText, paddingTop = '200px', imageClass } = this.props;
+    const { text, subText, imageClass } = this.props;
     return (
-      <div className="banner" style={{ paddingTop }}>
+      <div className="banner">
         <div className="banner-gradient" />
         <div className="container">
           <div className="six columns">
@@ -29,6 +29,7 @@ export default class Banner extends Component {
         </div>
         <style jsx>{`
           .banner {
+            padding-top: 200px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -69,6 +70,12 @@ export default class Banner extends Component {
               background-image: url('/static/bg-2.jpg');
             }
           }
+          @media (max-width: 550px) {
+            .banner {
+              padding-top: 165px;
+              height: 900px;
+            }
+          }
         `}</style>
         <style jsx global>{`
           .iphone {
@@ -82,16 +89,15 @@ export default class Banner extends Component {
             background-size: cover;
             background-position: center;
           }
-          .browser {
-            position: absolute;
-            top: -50px;
-            left: 40px;
-            width: 860px;
-            height: 520px;
-            // background-color: red;
-            background-image: url('/static/browser.png');
-            background-size: cover;
-            background-position: center;
+          @media (max-width: 550px) {
+            .iphone {
+              margin: 30px 0;
+              position: static;
+              background-size: contain;
+              background-repeat: no-repeat;
+              top: 0; left: 0;
+              width: 100%;
+            }
           }
         `}</style>
       </div>

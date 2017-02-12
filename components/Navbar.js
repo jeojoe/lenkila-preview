@@ -77,13 +77,18 @@ export default ({ url: { pathname } }) => (
         text-decoration: none;
       }
       @media (max-width: 550px) {
+        .navbar {
+          margin: 25px 0 0;
+        }
         .left, .right {
           display: block;
           text-align: center;
         }
         .right {
           float: none;
+          padding-bottom: 20px;
           margin: 0 auto;
+          border-bottom: 1px solid #fff;
         }
         .nav-item.no-hover {
           display: none;

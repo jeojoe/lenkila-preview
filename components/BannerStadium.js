@@ -8,9 +8,9 @@ export default class BannerStadium extends Component {
     sr.reveal('.browser', { delay: 500 });
   }
   render() {
-    const { text, subText, paddingTop = '140px', imageClass } = this.props;
+    const { text, subText, imageClass } = this.props;
     return (
-      <div className="banner" style={{ paddingTop }}>
+      <div className="banner">
         <div className="banner-gradient" />
         <div className="container">
           <div className="row">
@@ -31,6 +31,7 @@ export default class BannerStadium extends Component {
         </div>
         <style jsx>{`
           .banner {
+            padding-top: 140px;
             text-align: center;
             background-size: cover;
             background-position: center;
@@ -70,6 +71,11 @@ export default class BannerStadium extends Component {
             }
             100% {
               background-image: url('/static/bg-1.jpg');
+            }
+          }
+          @media (max-width: 550px) {
+            .banner {
+              padding-top: 190px;
             }
           }
         `}</style>
