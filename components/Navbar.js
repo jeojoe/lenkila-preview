@@ -29,6 +29,7 @@ export default ({ url: { pathname } }) => (
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 99;
         width: 100%;
         margin: 55px 0 0;
         text-shadow: 0px 2px 4px rgba(0,0,0,0.3);
