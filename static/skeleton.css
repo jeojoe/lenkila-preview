@@ -7,8 +7,7 @@
 * 12/29/2014
 */
 .banner {
-  height: 650px;
-  background: linear-gradient(271deg, #ff7300, #ffc100);
+  background: linear-gradient(271deg, #ff8900, #ffcd00);
   background-size: 400% 400%;
   animation: AnimationName 11s ease infinite;
   -webkit-animation: AnimationName 11s ease infinite;
