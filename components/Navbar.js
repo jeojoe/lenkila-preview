@@ -14,6 +14,7 @@ export default ({ url: { pathname } }) => (
         <Link href="/stadium">
           <a className={c('nav-item', { active: pathname === '/stadium' })}>สนาม</a>
         </Link>
+        <a className="nav-item no-hover">|</a>
         <Link href="/join">
           <a className={c('nav-item', { active: pathname === '/join' })}>ร่วมงานกับเรา</a>
         </Link>
@@ -48,7 +49,7 @@ export default ({ url: { pathname } }) => (
         color: #fff;
         font-size: 21px;
         font-weight: 600;
-        font-style: italic;
+        // font-style: italic;
       }
       .nav-item {
         color: #fff;
@@ -60,6 +61,9 @@ export default ({ url: { pathname } }) => (
       }
       .nav-item:hover {
         text-decoration: underline;
+      }
+      .nav-item.no-hover:hover {
+        text-decoration: none;
       }
     `}</style>
   </div>

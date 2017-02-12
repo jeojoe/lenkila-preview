@@ -19,7 +19,7 @@ export default () => (
         margin: 10px 0;
       }
       .footer a {
-        margin: 0 12px 0 0;
+        margin: 0 15px 0 0;
         text-decoration: none;
       }
       .footer a:hover {
