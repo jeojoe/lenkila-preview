@@ -17,11 +17,16 @@ export default class BannerStadium extends Component {
             <div className="text-reveal">
               <h1>{text}</h1>
               <h5>{subText}</h5>
-              <button className="button-primary">ลงทะเบียนใช้งาน</button>
+              <button className="button-primary">
+                {imageClass === 'stadium' ? 'ลงทะเบียนใช้งาน' : 'ติดต่อทีมงาน'}</button>
             </div>
           </div>
           <div className="row" style={{ paddingTop: '50px' }}>
-            <img src="/static/browser.png" alt="Stadium UI Preview" className="browser" />
+            {imageClass === 'stadium' ?
+              <img src="/static/browser.png" alt="Stadium UI Preview" className="browser" />
+              :
+              <img src="/static/browser.png" alt="Stadium UI Preview" className="browser" />
+            }
           </div>
         </div>
         <style jsx>{`
