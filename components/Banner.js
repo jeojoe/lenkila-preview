@@ -47,6 +47,7 @@ export default class Banner extends Component {
           }
           .download img {
             margin: 20px 15px 0 0;
+            width: 190px;
           }
           @keyframes cf3FadeInOut {
             0% {
@@ -62,12 +63,6 @@ export default class Banner extends Component {
               background-image: url('/static/bg-2.jpg');
             }
           }
-          @media (max-width: 550px) {
-            .banner {
-              padding-top: 165px;
-              height: 900px;
-            }
-          }
           @media (min-width: 1000px) {
             .banner {
               -webkit-transition: background-image 1s ease-in-out;
@@ -79,6 +74,12 @@ export default class Banner extends Component {
               animation-iteration-count: infinite;
               animation-duration: 10s;
               animation-direction: alternate;
+            }
+          }
+          @media (max-width: 550px) {
+            .banner {
+              padding-top: 165px;
+              height: 900px;
             }
           }
         `}</style>
@@ -94,7 +95,7 @@ export default class Banner extends Component {
             background-size: cover;
             background-position: center;
           }
-          @media (max-width: 550px) {
+          @media (max-width: 750px) {
             .iphone {
               margin: 30px 0;
               position: static;

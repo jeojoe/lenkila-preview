@@ -25,6 +25,11 @@ export default () => (
       .footer a:hover {
         text-decoration: underline; 
       }
+      @media (max-width: 1080px) {
+        .footer {
+          padding-top: 100px;
+        }
+      }
     `}</style>
   </div>
 );

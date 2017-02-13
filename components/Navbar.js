@@ -76,7 +76,7 @@ export default ({ url: { pathname } }) => (
       .nav-item.no-hover:hover {
         text-decoration: none;
       }
-      @media (max-width: 550px) {
+      @media (max-width: 750px) {
         .navbar {
           margin: 25px 0 0;
         }
