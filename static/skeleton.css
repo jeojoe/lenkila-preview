@@ -6,34 +6,6 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
 */
-.banner-gradient {
-  opacity: 0.8;
-  z-index: 0;
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(271deg, #ff8900, #ffcd00);
-  background-size: 400% 400%;
-  animation: AnimationName 10s ease infinite;
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-}
-@-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0% 50%}
-}
-@keyframes AnimationName { 
-  0%{background-position:0% 50%}
-  50%{background-position:100% 51%}
-  100%{background-position:0% 50%}
-}
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -455,4 +427,43 @@ there.
 
 div {
   box-sizing: border-box;
+}
+
+.banner-gradient {
+  opacity: 0.8;
+  z-index: 0;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1000px) {
+  .banner-gradient {
+    background-color: #FF9300;
+  }
+}
+@media (min-width: 1000px) {
+  .banner-gradient {
+    background: linear-gradient(271deg, #ff8900, #ffcd00);
+    background-size: 400% 400%;
+    animation: AnimationName 10s ease infinite;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+  }
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
 }
