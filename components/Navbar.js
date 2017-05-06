@@ -58,10 +58,12 @@ export default ({ url: { pathname } }) => (
         color: #fff;
         text-decoration: none;
         margin-left: 20px;
+        background-color: rgba(255,255,255,0);
+        transition: background-color 1s ease;
       }
       .nav-item.active {
         color: #ff9300;
-        background-color: #fff;
+        background-color: rgba(255,255,255,1);
         padding: 6px 12px 8px;
         border-radius: 8px;
         box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
@@ -90,7 +92,13 @@ export default ({ url: { pathname } }) => (
           margin: 0 auto;
           border-bottom: 1px solid #fff;
         }
+        .nav-item {
+          margin: 0 10px;
+        }
         .nav-item.no-hover {
+          display: none;
+        }
+        .no-mobile {
           display: none;
         }
       }

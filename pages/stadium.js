@@ -5,7 +5,7 @@ export default ({ url }) => (
   <Layout url={url}>
     <BannerStadium
       text="สะดวกยิ่งขึ้น คนเล่นมากขึ้น"
-      subText="ปัญหาช่องว่าง ปัญหาไม่มีคนจองจะหมดไป ถ้าใช้แอพเราจัดการ"
+      subText="ลดปัญหาช่องว่าง เพิ่มยอดการจอง เก็บสถิติ แอพเราที่เดียว"
       imageClass="browser"
     />
   </Layout>
